@@ -37,7 +37,15 @@ def extract_answer_from_response(response):
 
     # TODO what would happen if the response dictionary was not in the expected form?
     # TODO can you modify this function to print an error message, and return None
-    #   if the response dictionary is not in this structure? 
+
+    if extract_answer_from_response(response) =requests.get(url).json():
+        print(response)
+    else:
+        # If more than 3 items, return lowest priced item.
+        lowest_price = min(item_prices)
+        return lowest_price
+
+    #   if the response dictionary is not in this structure?
     answer = response['answer']
     return answer
 
